@@ -32,7 +32,9 @@ public class DemoAction {
         for (int i = 0; i < Integer.MAX_VALUE; i++) {
             try {
                 String hello = demoService.sayHello("world" + i);
+                System.err.println("*******************************************************");
                 System.out.println("[" + new SimpleDateFormat("HH:mm:ss").format(new Date()) + "] " + hello);
+                System.err.println("*******************************************************");
             } catch (Exception e) {
                 e.printStackTrace();
             }
